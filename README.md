@@ -14,8 +14,22 @@ Após a instalação, para assim ativar a versão do NodeJs, digite o comando :
 source ./nodejs-env/bin/activate
 E para testar(ter garantia que funcionou) digite:
 node --version
-Depois desses passos...
-Tivemos o acesso ao codigo que o nosso professor passou no Github 
-sendo ele: 
-digite: sudo nano index.js
 
+Depois desses passos...
+Tivemos o acesso ao código que o nosso professor passou no Github 
+sendo ele:
+var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Helloworld');
+}).listen(5000);
+(copie o codigo porque mais tarde será usado)
+
+Digite no terminal de comandos agora no Visualcode:  
+sudo nano index.js 
+logo depois digite: 
+node index.js
+Depois: 
+sudo nano index.js 
+Com este comando abrirá um novo terminal onde vc adciona o codigo lá do começo disponibilizado pelo professor, e modifique colocando seu nome completo e a data. (Mudamos o numero da porta tambem).
+Para testar coloque no firefox: localhost:(numero da sua porta).
